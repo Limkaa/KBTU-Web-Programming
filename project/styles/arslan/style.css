@@ -1,0 +1,781 @@
+/*=============
+  Genereal
+===============*/
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--color-primary: #387fbf;
+	--color-primary-hover: #6099cc;
+	--color-primary-dark: #1463aa;
+	--color-blue: #a8d9ef;
+	--color-green: #27ae60;
+	--color-accent: #ff8a00;
+	--color-black: #000000;
+	--color-white: #ffffff;
+	--color-main: #ecfbff;
+	--color-light-gray: #cfd1db;
+	/*text*/
+	--color-blue-text: #212c5b;
+	--color-dark-text: #383838;
+	--color-black-text: #3d3d3d;
+	--color-gray-text: #9ea3b7;
+}
+
+body {
+	margin: 0;
+	background-color: var(--color-main);
+}
+
+img {
+	max-width: 100%;
+}
+
+h1 {
+	margin: 0;
+}
+
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.wrapper.tours {
+	margin-top: 40px;
+	max-width: 1060px;
+}
+
+/*=============
+  Typography
+===============*/
+
+/* fonts */
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.main-text {
+	color: var(--color-blue-text);
+	font-size: 1.25rem;
+	text-align: center;
+}
+
+.mainpage-advantages-header {
+	color: var(--color-blue-text);
+	font-size: 1.375rem;
+	text-align: center;
+}
+
+.mainpage-advantages-header.small {
+	font-weight: normal;
+	font-size: 1rem;
+	color: var(--color-black);
+}
+
+.advantage-card-header {
+	text-align: center;
+	color: var(--color-blue-text);
+	font-weight: 600;
+	margin: 0;
+}
+
+.advantage-card-text {
+	color: var(--color-gray-text);
+	font-size: 0.9375rem;
+	text-align: center;
+}
+
+.how-to-buy-header {
+	font-weight: 600;
+	font-size: 1.25rem;
+	color: var(--color-blue-text);
+}
+
+.point-card-number {
+	font-size: 5rem;
+	font-weight: 600;
+	text-align: center;
+}
+
+.point-card-text {
+	text-align: center;
+}
+
+.faq-landing {
+	font-size: 0.8125rem;
+}
+
+.subscribe-email-form-button {
+	font-size: 0.875rem;
+}
+
+.subscribe-email-form-input {
+	font-size: 0.875rem;
+}
+
+.articles-header {
+	margin-bottom: 0.3125rem;
+	color: var(--color-blue-text);
+	font-weight: 600;
+}
+
+.download-app-main-header {
+	color: var(--color-white);
+	font-size: 1.375rem;
+	margin-top: 0;
+}
+
+.download-app-main-text {
+	font-size: 1rem;
+	color: var(--color-white);
+}
+
+.download-app-main-text.small {
+	color: #94dcfd;
+	font-size: 0.875rem;
+	margin-top: 0;
+}
+
+.tours-request-form-input {
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+.tours-request-form-button {
+	font-size: 1.25rem;
+	font-weight: 700;
+}
+
+.tours-request-header {
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.tours-request-subheader {
+	font-size: 1.25rem;
+	font-weight: 600;
+	margin-bottom: 2em;
+	margin-top: 0.25em;
+}
+
+.offers-header {
+	text-align: center;
+	font-size: 3rem;
+	color: var(--color-white);
+	font-weight: 700;
+}
+
+.offer-card-text {
+	color: var(--color-white);
+	font-size: 1.25rem;
+	text-align: center;
+}
+
+.guarantee-header {
+	color: var(--color-white);
+	font-size: 2.25rem;
+	margin-bottom: 1.315em;
+}
+
+.guarantee-text {
+	color: var(--color-white);
+	font-size: 1.5rem;
+	width: 66%;
+	margin: auto;
+}
+
+.application-header {
+	text-align: center;
+	font-size: 3rem;
+}
+
+.reserve-hotel-button {
+	color: var(--color-black-text);
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+
+.reserve-hotel-header {
+	color: var(--color-white);
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.recommended-tours-header {
+	text-align: center;
+	font-size: 3rem;
+	color: var(--color-black-text);
+}
+
+.recommended-tours-subheader {
+	text-align: center;
+	width: 50%;
+	margin: 1rem auto;
+	margin-bottom: 2rem;
+	color: var(--color-gray-text);
+	font-weight: 500;
+	font-size: 1.25rem;
+}
+
+.tour-card-loc {
+	color: var(--color-black-text);
+	margin-bottom: 0.5em;
+}
+
+.tour-card-name {
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: var(--color-black-text);
+	margin-top: 0;
+}
+
+.tour-card-cost {
+	font-size: 1.875rem;
+	color: var(--color-black-text);
+	margin: 0;
+}
+
+.tour-card-text {
+	font-size: 0.875rem;
+	color: var(--color-dark-text);
+}
+
+.tour-card-button {
+	color: var(--color-primary);
+	font-weight: 700;
+	transition: all 0.2s linear;
+}
+
+.tour-card-button:hover,
+.tour-card-button:active {
+	color: var(--color-white);
+	background-color: var(--color-primary);
+}
+
+.search-tabbutton {
+	color: var(--color-gray-text);
+	font-weight: 600;
+	font-size: 1rem;
+}
+
+.search-tabbutton.active {
+	color: var(--color-white);
+}
+
+.search-not-found-header {
+	font-size: 2.5rem;
+	font-weight: 500;
+	color: var(--color-blue-text);
+	margin: 0.875em 0;
+}
+
+.search-not-found-text {
+	font-size: 0.875rem;
+	color: var(--color-blue-text);
+}
+
+.search-info-text {
+	font-size: 0.875rem;
+	font-weight: 700;
+	color: var(--color-blue-text);
+}
+
+.search-form-input {
+	font-size: 0.9375rem;
+}
+
+.search-button {
+	font-size: 1.3125rem;
+	font-weight: 500;
+}
+
+/*=============
+  Layout
+===============*/
+
+/* landing */
+.advantage-card {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color-white);
+	padding: 1.25em;
+	padding-bottom: 2em;
+	align-items: center;
+}
+
+.mainpage-advantages-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 1em;
+}
+
+.advantage-card-img {
+	margin-bottom: 14px;
+	display: block;
+	width: 60px;
+	height: 60px;
+}
+
+.how-to-buy {
+	margin-bottom: 1.5em;
+}
+
+.how-to-buy-flex {
+	display: flex;
+}
+
+.how-to-buy-points {
+	flex: 25%;
+	margin-right: 0.75em;
+}
+
+.how-to-buy-video {
+	flex: 75%;
+}
+
+.point-card {
+	display: flex;
+	margin-bottom: 0.5em;
+	width: 100%;
+}
+
+.point-card.last {
+	margin-bottom: 0;
+}
+
+.point-card-number {
+	background-color: #67a5d9;
+	color: var(--color-white);
+	padding: 0.2em;
+}
+
+.point-card-text {
+	background-color: #3a83c2;
+	color: var(--color-white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5em;
+}
+
+.subscribe-email-form {
+	display: flex;
+	background-color: var(--color-white);
+	margin-bottom: 1.5em;
+	box-shadow: 0 2px 5px rgb(186 222 255 / 50%);
+	padding: 1em 2em;
+}
+
+.subscribe-email-form-left {
+	display: flex;
+	flex: 60%;
+	justify-content: space-around;
+}
+
+.subscribe-email-form-right {
+	display: flex;
+	flex: 40%;
+	justify-content: space-evenly;
+}
+
+.subscribe-email-form-img {
+	height: 38px;
+	margin-right: 3em;
+}
+
+.subscribe-email-form-text {
+	margin: 0;
+	font-size: 0.875rem;
+}
+
+.form-input {
+	border: 1px solid var(--color-light-gray);
+	border-radius: 3px;
+	padding: 0.75em;
+	outline: none;
+}
+
+.form-button {
+	background-color: var(--color-accent);
+	color: var(--color-white);
+	border: none;
+	border-radius: 3px;
+	padding-left: 2em;
+	padding-right: 2em;
+	cursor: pointer;
+	outline: none;
+}
+
+.faq-landing {
+	border-top: 2px solid var(--color-gray-text);
+	margin-bottom: 5em;
+}
+
+.articles {
+	margin-bottom: 2rem;
+}
+
+.articles-grid {
+	border-top: 2px solid var(--color-gray-text);
+	padding-top: 1em;
+	display: flex;
+	justify-content: space-between;
+}
+
+.article-card {
+	height: 90px;
+	width: 150px;
+	text-align: center;
+}
+
+.article-card-link {
+	cursor: pointer;
+}
+
+.article-card-img {
+	background: url(/images/landing/articles-bg.png) no-repeat;
+	height: 90px;
+	width: 150px;
+	padding-top: 10px;
+	border-bottom: 2px solid var(--color-gray-text);
+}
+
+.download-app {
+	background-color: #6290c1;
+	margin-bottom: 3rem;
+	padding: 0 2em;
+	border-radius: 8px;
+}
+
+.download-app-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	padding-left: 2em;
+}
+
+.download-app-form {
+	margin-bottom: 1rem;
+	display: flex;
+	border-radius: 8px;
+	overflow: hidden;
+	margin-bottom: 2rem;
+	max-height: 40px;
+}
+
+.download-app-form-button,
+.download-app-form-input {
+	height: 100%;
+	display: inline-block;
+	border-radius: 0;
+	font-size: 1rem;
+}
+
+.download-app-form-input {
+	flex: 30%;
+}
+
+.download-app-flex {
+	display: flex;
+}
+
+.download-app-main-links {
+	display: flex;
+	justify-content: space-between;
+}
+
+.download-app-link-img {
+	height: 45px;
+}
+
+/* tours */
+.tours-request {
+	position: relative;
+	padding: 0 1.5em;
+	margin-bottom: 4em;
+}
+
+.tours-request-form {
+	background-color: var(--color-white);
+	padding: 3rem 2.5rem;
+	border-radius: 16px;
+	max-width: 460px;
+}
+
+.tours-request-form-input {
+	display: block;
+	width: 100%;
+	margin-bottom: 1.25em;
+	border-radius: 8px;
+	padding: 1em;
+	border: none;
+	background-color: rgba(240, 241, 244);
+}
+
+.tours-request-form-button {
+	width: 100%;
+	border-radius: 8px;
+	padding: 1em;
+}
+
+.tours-request-img {
+	position: absolute;
+	top: -70px;
+	right: 0;
+}
+
+.tours-request-form-subtext {
+	margin-top: 1em;
+}
+
+.offers {
+	background-color: var(--color-primary);
+	background-image: url(/images/tours/background_pattern.png);
+	padding: 4em 0;
+}
+
+.offers-flex {
+	display: flex;
+	max-width: 1200px;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+
+.offers-header {
+	margin-bottom: 2rem;
+}
+
+.offer-card {
+	text-align: center;
+	padding: 0 1em;
+}
+
+.offer-card > img {
+	margin-bottom: 0.5em;
+}
+
+.offer-card-text {
+	margin: 0;
+}
+
+.offer-border-right {
+	border-right: 1px solid var(--color-white);
+}
+
+.offer-border-left {
+	border-left: 1px solid var(--color-white);
+}
+
+.guarantee {
+	background-color: var(--color-main);
+}
+
+.guarantee-card {
+	background-color: red;
+	background: no-repeat 50% url(../../images/arslan/tours/background_gradient.png);
+	background-size: cover;
+	max-width: 1000px;
+	margin: 6rem auto;
+	text-align: center;
+	border-radius: 16px;
+	padding: 3em 1em;
+}
+
+.recommended-tours {
+	background-color: var(--color-white);
+	padding: 3rem 1.5rem;
+}
+
+.tours-overflow {
+	overflow-x: scroll;
+}
+
+.tours-carousel {
+	display: inline-flex;
+}
+
+.tour-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 300px;
+	border: 1px solid #f0f1f4;
+	border-radius: 8px;
+	overflow: hidden;
+	margin-right: 2em;
+	padding-bottom: 2em;
+}
+
+.tour-card-img {
+	margin-bottom: 0.5em;
+}
+
+.tour-card-loc,
+.tour-card-name,
+.tour-card-suppl {
+	padding: 0 1rem;
+}
+
+.tour-card-button {
+	text-decoration: none;
+	width: 100%;
+	display: block;
+	text-align: center;
+	border-radius: 8px;
+	border: 2px solid var(--color-primary);
+	padding: 0.75em;
+}
+
+.application-wrapper {
+	position: relative;
+	max-width: 1060px;
+	margin: 0 auto;
+	padding: 1.5em;
+	margin-bottom: 30px;
+}
+
+.tours-request-form.application {
+	margin: 0 auto;
+	margin-bottom: 4rem;
+}
+
+.application-header {
+	margin-bottom: 2.5rem;
+}
+
+.application-img {
+	position: absolute;
+	top: 3.2rem;
+	left: -4em;
+}
+
+.reserve-hotel {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	background-color: var(--color-primary);
+	border-radius: 16px;
+	padding: 4em 5em;
+}
+
+.reserve-hotel-button {
+	text-decoration: none;
+	border-radius: 100px;
+	background-color: var(--color-white);
+	padding: 1em 2em;
+}
+
+/* search */
+.search-landing {
+	margin: 3rem 0;
+}
+
+.search-form {
+	display: flex;
+	width: 100%;
+}
+
+.search-form-input {
+	height: 55px;
+	border: 1px solid var(--color-gray-text);
+	outline: none;
+}
+
+.search-form-button {
+	border: 0;
+	background-color: var(--color-white);
+	border-top: 1px solid var(--color-gray-text);
+	border-bottom: 1px solid var(--color-gray-text);
+	cursor: pointer;
+	min-width: 30px;
+}
+
+.search-button {
+	background-color: #fe9922;
+	width: 100%;
+	padding: 0;
+	border-radius: 0;
+}
+
+.search-form-input.dest {
+	padding: 0 1em;
+}
+
+.search-form-input.depart {
+	padding: 0 1em;
+}
+
+.search-form-input.date {
+	border-left: 0;
+	width: 183px;
+	padding: 0 1em;
+	cursor: pointer;
+}
+
+.search-form-date {
+	position: relative;
+}
+
+.date-icon {
+	position: absolute;
+	background-image: url(/images/search/date-picker-icon_03.png);
+	background-repeat: no-repeat;
+	top: 17px;
+	right: 8px;
+	height: 21px;
+	width: 23px;
+}
+
+.search-tabbutton {
+	background-color: var(--color-white);
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 8px 8px 0 0;
+	transition: 0.3s;
+	padding: 0.75em 1.25em;
+}
+
+.search-tab {
+	margin-top: 3rem;
+}
+
+.search-info {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+}
+
+.search-info-text {
+	margin: 0;
+}
+
+.search-tabbutton.active {
+	background-color: var(--color-primary);
+}
+
+.search-tabcontent {
+	display: none;
+	background-color: var(--color-white);
+}
+
+.search-not-found {
+	text-align: center;
+	padding: 1.5em 0.75em;
+}
+
+.search-tabcontent {
+	animation: fadeEffect 0.5s;
+}
+
+@keyframes fadeEffect {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

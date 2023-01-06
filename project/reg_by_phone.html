@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Зарегистрироваться</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="https://www.chocotravel.com/favicon.png">
+    <link rel="stylesheet" href="styles/shayakhmet/chocotravel_login.css">
+</head>
+
+<body>
+    <div id="login_app">
+        <div class="main-layout">
+            <div class="main-layout__wrap">
+                <img src="https://user.object.pscloud.io/oauth2/clients/images/1647348064/chocotravel_logo.svg" alt="Chocotravel" style="margin-bottom: 20px; max-width: 100%; object-fit: contain; height: 54px;">
+                <div class="reg-by-phone">
+                    <div class="main-card">
+                        <div class="main-card__header">
+                            <h2 class="main-card__title">Регистрация Choco-аккаунта</h2>
+                            <p class="main-card__description">На номер +7 (###) - ### - ## - ## отправлено SMS с кодом подтверждения</p>
+                        </div>
+                        <div class="main-card__content">
+                            <div class="reg-by-phone__login-wrapper">
+                                <div class="input-field" style="margin-bottom: 20px;">
+                                    <div class="input-field__wrapper">
+                                        <input class="input-field__input" type="text" disabled placeholder="+7 (###) - ### - ## - ##" autocomplete="off">
+                                    </div>
+                                </div>
+                                <a href="/" class="router-link-active">Изменить</a>
+                            </div>
+                            <div class="sms">
+                                <input class="sms__input" type="text" pattern="[0-9]*" inputmode="numeric" style="outline: none; border: none;" data-mask="####" data-mask-inited="true">
+                                <div class="sms__digits">
+                                    <div class="sms__digit sms__digit--empty">0</div>
+                                    <div class="sms__digit sms__digit--empty">0</div>
+                                    <div class="sms__digit sms__digit--empty">0</div>
+                                    <div class="sms__digit sms__digit--empty">0</div>
+                                </div>
+                            </div>
+                            <div class="sms__resend"> Отправить код ещё раз </div>
+                        </div>
+                        <div class="main-card__footer">
+                            <div class="reg-by-phone__conditions">
+                                <label class="checkbox-v2-container">
+                                    <input type="checkbox" value="false">
+                                    <span class="checkbox-v2-mark">
+                                    </span>
+                                    <span class="reg-by-phone__agreement">
+                                        Потверждая, вы соглашаетесь
+                                        <a href="">с договором публичной оферты</a>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="main-card__bottom-btn">
+                                <button class="main-button main-button--black main-button--full-width" disabled>
+                                    <span>Продолжить</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

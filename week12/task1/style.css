@@ -1,0 +1,25 @@
+.loader_header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	gap: 10px;
+}
+
+#badge {
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	border-radius: 7px;
+	background-color: red;
+}
+
+#loader_progress {
+	width: 400px;
+	height: 20px;
+	border: 1px solid lightgrey;
+}
+
+#loader_line {
+	height: 100%;
+	background-color: lightgreen;
+}

@@ -1,0 +1,201 @@
+* {
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+    background-color: inherit;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #ecfbff;
+    height: 100%;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    color: #212c5b;
+    position: relative;
+    background-size: cover;
+}
+
+b, h1, h2, h3, h4, h5, h6, strong {
+    font-weight: 600;
+}
+
+a {
+    color: #212c5b
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    min-height: 100%;
+    position: relative;
+}
+
+.center {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.content-center {
+    margin: 10px 0;
+}
+
+.heading-action-medium {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* CHOCOTRAVEL CONTACTS */
+
+.main_contact_info>h1 {
+    text-align: center;
+    border-top: 1px solid #9ea3b7;
+    border-bottom: 1px solid #9ea3b7;
+    padding: 10px 0;
+    background-color: #fff;
+}
+
+.contact_info {
+    background-color: #fff;
+}
+
+.contact_info>div {
+    width: 96%;
+    margin: 0 auto;
+}
+
+.branches h2 {
+    margin: 10px 0 0;
+}
+
+.heading-action-small {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.branches .address {
+    /* float: left; */
+    width: 415px;
+    margin: 13px 0 0;
+}
+
+.branches .img {
+    /* float: right; */
+    width: 534px;
+    height: 254px;
+    /* background-color: green; */
+    background-image: url(map.PNG);
+    background-size: cover;
+}
+
+.contacts-payment-info p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.refund_exchange {
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #9ea3b7;
+}
+
+.refund_exchange a {
+    margin-left: 12px;
+    border-radius: 4px;
+    width: 135px;
+    color: #212c5b;
+    font-size: 13px;
+    text-align: center;
+    padding: 8px 16px;
+    border: 1px solid #9ea3b7;
+    text-decoration: none;
+}
+
+.branches .tab-block {
+    /* display: none; */
+    display: block;
+}
+
+.branches .vzvrt_but {
+    float: right;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 280px;
+    color: #212c5b;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: center;
+    padding: 7px 0;
+    border: 1px solid #9ea3b7;
+    text-decoration: none;
+}
+
+.contact_bottom {
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.contact_bottom:before {
+    position: absolute;
+    content: url(https://www.chocotravel.com/media/v3/media/images/contact_info.png);
+    top: 0;
+    left: 0;
+    margin-top: 5px;
+}
+
+.contact_bottom p {
+    padding-left: 40px;
+}
+
+.contact_bottom p span {
+    font-weight: 600;
+}
+
+/* CHOCOTRAVEL ARTICLES */
+
+#articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.article_tab {
+    width: 290px;
+    height: 320px;
+    margin: 20px 21px 0;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: box-shadow .3s ease;
+}
+
+.article_image_tab {
+    text-align: center;
+    position: relative;
+    height: 25px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.nofollowlink {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.article_tab .short_desc_container {
+    margin-top: 10px;
+}
+
+.txt-action-small {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.txt-action-small .nofollowlink {
+    font-size: 12px!important;
+}

@@ -1,0 +1,285 @@
+/* CHOCOTRAVEL LOGIN */
+
+* {
+    box-sizing: border-box;
+    font-family: Sirius;
+}
+
+body {
+    margin: 0;
+}
+
+html, body, #login_app {
+    height: 100%;
+}
+
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main-layout__wrap {
+    max-width: 377px;
+    width: 100vh;
+}
+
+.main-card {
+    max-width: 377px;
+    width: 100vh;
+    box-sizing: border-box;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 24px;
+    box-shadow: 0px 92px 92px rgb(0 0 0 / 5%), 0px 3px 38.4354px rgb(0 0 0 / 3%), 
+    0px -3px 20.5494px rgb(0 0 0 / 6%), 0px 5.79369px 11.5198px rgb(0 0 0 / 2%), 
+    0px 2.40368px 6.11809px rgb(0 0 0 / 1%), 0px 0.705169px 2.54588px rgb(0 0 0 / 1%);
+}
+
+.main-card__title {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0px;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.main-card__description {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
+    margin: -8px 0 30px 0;
+}
+
+.input-field__wrapper {
+    border-radius: 12px;
+    padding: 1px;
+    display: flex;
+    align-items: stretch;
+    position: relative;
+}
+
+.input-field__input {
+    min-width: 100%;
+    box-sizing: border-box;
+    border-radius: 12px;
+    line-height: 16px;
+    color: #000;
+    outline: none;
+    padding: 12px 46px 11px 16px;
+    z-index: 2;
+    height: 52px;
+    background-color: #f1f2f7;
+    font-size: 16px;
+    border: 1px solid #f1f2f7;
+}
+
+.input-field__input[type=password] {
+    padding-right: 66px;
+}
+
+.input-field__clear {
+    position: absolute;
+    z-index: 5;
+    transform: translateY(50%);
+    right: 16px;
+    cursor: pointer;
+}
+
+.input-field__after-content {
+    display: flex;
+    align-items: center;
+    border-radius: 0 4px 4px 0;
+    position: absolute;
+    z-index: 5;
+    right: 16px;
+    transform: translateY(50%);
+}
+
+.input-field__after-content img {
+    cursor: pointer;
+}
+
+.input-field__password-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-login__forgot-reminder {
+    text-align: right;
+    margin-top: 4px;
+}
+
+.email-login__forgot-reminder:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.reg-by-phone__login-wrapper, .reg-by-email__login-wrapper {
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+}
+
+.reg-by-phone__login-wrapper a, .reg-by-email__login-wrapper a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 0 20px 20px;
+}
+
+.sms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.sms__input {
+    color: transparent;
+    width: 164px;
+    letter-spacing: 24px;
+    padding: 0 4px;
+    font-size: 36px;
+    caret-color: #000;
+}
+
+.sms__digits {
+    position: absolute;
+    display: flex;
+}
+
+.sms__digit {
+    width: 35px;
+    height: 40px;
+    border-bottom: 2px solid #a4a2b7;
+    border-radius: 1px;
+    margin: 0 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.sms__digit--empty {
+    color: #a4a2b7;
+}
+
+.sms__resend {
+    color: gray;
+    text-align: center;
+    font-weight: 900;
+    font-size: 18px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.reg-by-phone__conditions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.checkbox-v2-container {
+    position: relative;
+    align-items: center;
+    display: inline-flex;
+}
+
+.checkbox-v2-container input[type=checkbox] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.checkbox-v2-container input[type=checkbox]:checked~.checkbox-v2-mark {
+    background-color: #000;
+    border-color: #000;
+}
+
+.checkbox-v2-container input[type=checkbox]:checked~.checkbox-v2-mark:after {
+    display: block;
+}
+
+.checkbox-v2-mark {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #a4a2b7;
+    border-radius: .5rem;
+    position: relative;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.checkbox-v2-mark:after {
+    content: "";
+    position: absolute;
+    left: 8.5px;
+    top: 2px;
+    width: 10px;
+    height: 18px;
+    display: none;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    box-sizing: border-box;
+}
+
+.reg-by-phone__agreement {
+    color: #000;
+}
+
+.reg-by-phone__agreement a {
+    color: #000;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.main-card__bottom-btn {
+    margin-top: 20px;
+}
+
+.main-button {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    padding: 12px 40px 11px;
+    background-color: #000;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    margin: 4px 0;
+    cursor: pointer;
+    height: 52px;
+    border-radius: 12px;
+    font-weight: bold;
+    touch-action: none;
+}
+
+.main-button:disabled {
+    background: #ededed;
+    cursor: not-allowed;
+}
+
+.main-button--gray {
+    background-color: #f1f2f7;
+    color: #000;
+}
+
+.main-button--full-width {
+    width: 100%;
+}

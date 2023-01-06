@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <form class="form" method="post" id="form">
+        <h1 class="form__title">Регистрация</h1>
+        <div class="validation_message" id="username_validation"></div>
+        <input type="text" class="form__input" name="username" id="username" placeholder="Имя пользователя" />
+        <div class="validation_message" id="email_validation"></div>
+        <input type="email" class="form__input" name="email" id="email" placeholder="Email адрес">
+        <div class="validation_message" id="password_validation"></div>
+        <input type="password" class="form__input" name="password" id="password" placeholder="Пароль">
+        <input type="submit" name="submit" value="Зарегистрироваться" class="submit-btn">
+        <p class="link"><a href="index.html">Войти в кабинет</a></p>
+    </form>
+    <script>
+        const username = document.getElementById('username')
+        const username_validation = document.getElementById('username_validation')
+        const email = document.getElementById('email')
+        const email_validation = document.getElementById('email_validation')
+        const password = document.getElementById('password')
+        const password_validation = document.getElementById('password_validation')
+        const form = document.getElementById('form')
+
+        form.addEventListener('submit', onSubmit)
+
+        function onSubmit(e) {
+            e.preventDefault()
+            let format = /[ `+*#%]/;
+            let email_requires = /[@]/;
+            let password_requires = /[ `+*#%]/;
+
+            username_validation.innerText = ''
+            email_validation.innerText = ''
+            password_validation.innerText = ''
+
+            let is_correct = true;
+
+            if (username.value.length < 8) {
+                username_validation.innerText = "Длина имени пользователя должна быть не менее 8 символов"
+                is_correct = false;
+            } else if (format.test(username.value)) {
+                username_validation.innerText = 'Имя пользователя не может содержать ` + * # %'
+                is_correct = false;
+            }
+
+            if (!email_requires.test(email.value)) {
+                email_validation.innerText = ' Email должен содержать символ @'
+                is_correct = false;
+            }
+
+            if (password.value.length < 5) {
+                password_validation.innerText = "Длина пароля должна быть не менее 5 символов"
+                is_correct = false;
+            } else if (!format.test(password.value)) {
+                password_validation.innerText = 'Пароль должен содержать спец символы ` + * # %'
+                is_correct = false;
+            }
+
+            if (is_correct) console.log('Form submitted', username.value, email.value, password.value)
+        }
+
+    </script>
+</body>
+
+</html>

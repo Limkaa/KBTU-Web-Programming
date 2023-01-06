@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/arslan/style.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дешевые авиабилеты онлайн: купить авиабилеты в Казахстане. Поиск и бронирование билетов на самолет по доступным ценам</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__companies">
+                <a class="company" target="_blank" rel="nofollow" href="https://chocolife.me/?utm_source=chocotravel.com&utm_medium=plashka">
+                    <div class="company_container">
+                        <div class="company__title">Скидки до 90%</div>
+                        <img class="company__image" src="images/site/chocolife.svg" alt="Chocolife logo">
+                    </div>
+                </a>
+                <div class="company header__company--active" rel="nofollow" href="">
+                    <div class="company_container">
+                        <div class="company__title">Авиабилеты</div>
+                        <img class="company__image" src="images/site/chocotravel-small.svg" alt="Chocotavel logo" style="opacity: 1; filter: none">
+                    </div>
+                </div>
+                <a class="company" target="_blank" rel="nofollow" href="http://lensmark.kz/?utm_source=chocotravel.com&utm_medium=plashka">
+                    <div class="company_container">
+                        <div class="company__title">Оптика</div>
+                        <img class="company__image" src="images/site/lensmark.svg" alt="Lensmark logo">
+                    </div>
+                </a>
+                <a class="company" target="_blank" rel="nofollow" href="http://chocofood.kz/?utm_source=chocotravel.com&utm_medium=plashka">
+                    <div class="company_container">
+                        <div class="company__title">Заказ еды</div>
+                        <img class="company__image" src="images/site/chocofood.svg" alt="Chocofood logo">
+                    </div>
+                </a>
+                <a class="company" target="_blank" rel="nofollow" href="http://idoctor.kz/?utm_source=chocotravel&utm_medium=plashka">
+                    <div class="company_container">
+                        <div class="company__title">Поиск врачей</div>
+                        <img class="company__image" src="images/site/idoctor.svg" alt="Idoctor logo">
+                    </div>
+                </a>
+            </div>
+            <a href="login.html" class="header__login">Войти</a>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav__logo">
+                <img src="images/site/chocotravel-logo.svg" alt="Chocotravel logo">
+            </div>
+            <div class="nav__links">
+                <a class="nav__link nav__link--active" href="index.html">
+                    <img class="nav__link_image" src="images/site/icons/plane.svg" alt="Plane">
+                    <span class="nav__link_title">Авиабилеты</span>
+                </a>
+                <a class="nav__link" href="visa.html">
+                    <img class="nav__link_image" src="images/site/icons/visa.svg" alt="Visa">
+                    <span class="nav__link_title">Визы</span>
+                </a>
+                <a class="nav__link" href="tours.html">
+                    <img class="nav__link_image" src="images/site/icons/tours.svg" alt="Tours">
+                    <span class="nav__link_title">Туры</span>
+                </a>
+                <a class="nav__link" href="about.html">
+                    <span class="nav__link_title">О компании</span>
+                </a>
+                <a class="nav__link" href="articles.html">
+                    <span class="nav__link_title">Блог</span>
+                </a>
+                <a class="nav__link" href="faq.html">
+                    <span class="nav__link_title">Вопросы</span>
+                </a>
+                <a class="nav__link" href="feedback.html">
+                    <span class="nav__link_title">Отзывы</span>
+                </a>
+                <a class="nav__link" href="contacts.html">
+                    <span class="nav__link_title">Контакты</span>
+                </a>
+                <a class="nav__link" href="payments.html">
+                    <span class="nav__link_title">Оплата</span>
+                </a>
+            </div>
+        </nav>
+        <div class="container">
+            <section class="search">
+                <form class="search-form" action="search.php">
+                    <input class="search-form-input depart" type="text" name="depart_city" id="" placeholder="Город отправления">
+                    <button class="search-form-button"><img width="30px" src="images/arslan/search/icon-change-dests_03.png" alt="change destionation"></button>
+                    <input class="search-form-input dest" type="text" name="dest_city" id="" placeholder="Город прибытия">
+                    <div class="search-form-date">
+                        <input class="search-form-input date" class="search-form-date" type="text" name="date" placeholder="Дата туда/обратно">
+                        <div class="date-icon"></div>
+                    </div>
+                    <input class="search-form-input" type="text" placeholder="Выберите тип" name="type" id="">
+                    <button class="form-button search-button" type="submit">Найти</button>
+                </form>
+            </section>
+            <section class="search-tab">
+                <div class="search-info">
+                    <div class="search-tabs">
+                        <button class="search-tabbutton" onclick="openCity(event, 'Airplane')" id="defaultOpen">Авиабилеты от 0 ₸</button>
+                        <button class="search-tabbutton" onclick="openCity(event, 'Train')">Ж/Д билеты от 0 ₸</button>
+                    </div>
+                    <p class="search-info-text">Указано местное время отправления и прибытия</p>
+                </div>
+                <div class="search-content">
+                    <div id="Airplane" class="search-tabcontent">
+                        <div class="search-not-found">
+                            <h1 class="search-not-found-header">ой...</h1>
+                            <p class="search-not-found-text">По вашему запросу не найдено ни одного билета.<br>Попробуйте изменить параметры поиска</p>
+                            <img src="images/arslan/search/airplane--gray.svg" alt="" class="search-not-found-img">
+                        </div>
+                    </div>
+                    <div id="Train" class="search-tabcontent">
+                        <div class="search-not-found">
+                            <h1 class="search-not-found-header">ой...</h1>
+                            <p class="search-not-found-text">По вашему запросу не найдено ни одного билета.<br>Попробуйте изменить параметры поиска</p>
+                            <img src="images/arslan/search/airplane--gray.svg" alt="" class="search-not-found-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="wrapper">
+            <div class="footer__row">
+                <div class="footer__column">
+                    <div class="footer__column_title">О нас</div>
+                    <a href="about.html">О компании</a>
+                    <a href="articles.html">Блог</a>
+                    <a href="payments.html">Способы оплаты</a>
+                    <a href="contacts.html">Контакты</a>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__column_title">Пользователям</div>
+                    <a href="faq.html">Вопросы - ответы</a>
+                    <a href="feedback.html">Отзывы</a>
+                </div>
+            </div>
+            <div class="footer__row">
+                <div class="footer__column footer__icons">
+                    <img src="images/site/icons/visa-pay-logo.svg" alt="Visa pay">
+                    <img src="images/site/icons/master-card.svg" alt="Mastercard">
+                    <img src="images/site/icons/union-pay.svg" alt="Union pay">
+                </div>
+                <div class="footer__column footer__icons">
+                    <img src="images/site/icons/astana-hub.png" alt="Visa pay" style="height: 26px;">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+
+        // Get all elements
+        tabcontent = document.getElementsByClassName("search-tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements and remove class "active"
+        tablinks = document.getElementsByClassName("search-tabbutton");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+</script>
+
+</html>
